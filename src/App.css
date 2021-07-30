@@ -1,0 +1,22 @@
+.App {
+  background-color: #e7b91b;
+  width: 100%;
+  height: 100vh;
+}
+
+h2 {
+  color: #111;
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 32px;
+  margin: 0 0 72px;
+  text-align: center;
+  
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  /* or 3d alternative if you will add animations (smoother transitions) */
+  transform: translate3d(-50%,-50%,0);
+}
