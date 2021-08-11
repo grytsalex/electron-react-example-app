@@ -1,5 +1,5 @@
 import { Form, Button, Container, Row, Col } from "react-bootstrap";
-import { validateSingleInput } from "./utils";
+import { validateFileLoadedInput } from "./utils";
 import "./App.css";
 
 function App() {
@@ -8,11 +8,11 @@ function App() {
       <Row>
         <Col>
           <Form.Group controlId="formFileLg" className="mb-3 file-input">
-            <Form.Label className="label">Выберите файл файл для загрузки</Form.Label>
+            <Form.Label className="label">Выберите файл для загрузки</Form.Label>
             <Form.Control
               type="file"
               size="lg"
-              onChange={() => validateSingleInput(this)}
+              onChange={() => validateFileLoadedInput(this)}
             />
           </Form.Group>
         </Col>

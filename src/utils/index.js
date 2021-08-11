@@ -1,1 +1,1 @@
-export { validateSingleInput } from "./formatValidation";
+export { validateFileLoadedInput } from "./validateFileLoadedInput";
