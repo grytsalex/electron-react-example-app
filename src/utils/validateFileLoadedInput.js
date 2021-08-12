@@ -1,6 +1,10 @@
-const acceptedFormats = [".xls"];
+const acceptedFormats = [".xlsx"];
 
-export const validateFileLoadedInput = (element) => {
-    const inputValue = element.value;
-    console.log('input value', inputValue);
+export const validateFileLoadedInput = fileName => {
+    let isFileValid = false;
+    acceptedFormats.some(ext => {
+        if(fileName.endsWith(ext)) {
+            isFileValid = true;
+        }
+    })
 }

@@ -3,10 +3,10 @@
   height: 100vh;
 }
 
-.file-input {
-  width: fit-content;
-}
-
 .label {
   padding-top: 20px;
+}
+
+.generate-btn {
+  width: 100%;
 }
