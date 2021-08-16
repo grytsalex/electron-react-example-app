@@ -11,6 +11,7 @@ function App() {
           <Form.Group controlId="formFileLg" className="mb-3 file-input">
             <Form.Label className="label">Выберите файл для загрузки</Form.Label>
             <Form.Control
+              accept=".xlsx"
               type="file"
               size="lg"
               onChange={(e) => validateFileLoadedInput(e.target.value)}
