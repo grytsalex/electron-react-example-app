@@ -21,7 +21,7 @@ function App() {
       </Row>
       <Row>
         <Col xs={4}>
-          <Button variant="primary" className="generate-btn">Сгенерировать номера</Button>
+          <Button variant="primary" className="generate-btn" onClick={() => {}}>Сгенерировать номера</Button>
         </Col>
       </Row>
     </Container>
