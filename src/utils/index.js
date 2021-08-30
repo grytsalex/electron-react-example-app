@@ -1,2 +1,2 @@
 export { validateFileLoadedInput } from "./validateFileLoadedInput";
-export {} from "./generateNumbers";
+export { startProccess } from "./generateNumbers";

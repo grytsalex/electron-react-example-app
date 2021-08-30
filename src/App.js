@@ -1,5 +1,5 @@
 import { Form, Button, Container, Row, Col } from "react-bootstrap";
-import { validateFileLoadedInput } from "./utils";
+import { validateFileLoadedInput, startProccess } from "./utils";
 import "./App.css";
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
       </Row>
       <Row>
         <Col xs={4}>
-          <Button variant="primary" className="generate-btn" onClick={() => {}}>Сгенерировать номера</Button>
+          <Button variant="primary" className="generate-btn" onClick={() => startProccess}>Сгенерировать номера</Button>
         </Col>
       </Row>
     </Container>
