@@ -9,7 +9,8 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "electron": "electron .",
-    "dev": "nf start -p 3000"
+    "dev": "nf start -p 3000",
+    "server": "nodemon src/server/api.js"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
@@ -17,10 +18,12 @@
     "@testing-library/user-event": "^12.8.3",
     "bootstrap": "^5.0.2",
     "browserify-fs": "^1.0.0",
+    "express": "^4.17.1",
     "react": "^17.0.2",
     "react-bootstrap": "^2.0.0-beta.4",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
+    "sass": "^1.41.0",
     "xlsx": "^0.17.1"
   },
   "devDependencies": {

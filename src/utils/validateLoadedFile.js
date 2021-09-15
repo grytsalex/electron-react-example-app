@@ -1,6 +1,6 @@
 const acceptedFormats = [".xlsx"];
 
-export const validateFileLoadedInput = (fileName) => {
+export const validateLoadedFile = (fileName) => {
   // eslint-disable-next-line
   let isFileValid = false;
   // eslint-disable-next-line
