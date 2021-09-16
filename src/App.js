@@ -20,34 +20,27 @@ function App() {
     <Container className="App">
       <Form>
         <Row>
-          <Col xs={4}>
-            <Form.Group controlId="formFileLg" className="mb-3 file-input">
-              <Form.Label className="label">
-                Выберите файл для загрузки
-              </Form.Label>
-              <Form.Control
-                accept=".xlsx"
-                type="file"
-                size="lg"
-                onChange={(e) => handleChange(e)}
-              />
-            </Form.Group>
-          </Col>
-          <Col>
-            <Button
-              variant="primary"
-              type="submit"
-              style={{
-                marginTop: "62px",
-                padding: "6px 10px",
-                backgroundColor: "yellow",
-                color: "black",
-                border: "none",
-              }}
-            >
-              Подтвердить
-            </Button>
-          </Col>
+          <div className="main-row">
+            <Col xs={4}>
+              <Form.Group controlId="formFileLg" className="mb-3 file-input">
+                <Form.Label className="label">
+                  Выберите файл для загрузки
+                </Form.Label>
+                <Form.Control
+                  className="input-file"
+                  accept=".xlsx"
+                  type="file"
+                  size="lg"
+                  onChange={(e) => handleChange(e)}
+                />
+              </Form.Group>
+            </Col>
+            <Col>
+              <Button className="confirm-btn" type="submit">
+                Подтвердить
+              </Button>
+            </Col>
+          </div>
         </Row>
       </Form>
       <Row>
@@ -67,7 +60,7 @@ function App() {
             <div className="box">
               <div className="box-inner">
                 <a href="https://stroycity.com.ua/" target="blank">
-                <Image src={logo} className="logo-image" rounded />
+                  <Image src={logo} className="logo-image" rounded />
                 </a>
               </div>
             </div>

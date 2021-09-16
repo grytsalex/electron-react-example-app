@@ -7,17 +7,19 @@ $color-alpha: #b78846;
   padding: 0;
   border: 0;
   box-sizing: border-box;
-  &:before, &:after {
+  &:before,
+  &:after {
     box-sizing: border-box;
   }
 }
 
-html, body {
+html,
+body {
   background-color: #283747 !important;
   height: 100%;
   overflow: hidden;
   color: #fff;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-size: 18px;
 }
 
@@ -33,6 +35,7 @@ html, body {
 
 .generate-btn {
   width: 100%;
+  min-width: fit-content;
 }
 
 .logo-row {
@@ -50,6 +53,19 @@ html, body {
   position: relative;
 }
 
+.confirm-btn {
+  margin-top: 62px;
+  padding: 6px 10px;
+  background-color: yellow !important;
+  color: black !important;
+  border: none !important;
+  margin-left: 30px !important;
+
+  &:hover {
+    background-color: #dbd514 !important;
+  }
+}
+
 .box {
   position: absolute;
   top: 50%;
@@ -59,7 +75,8 @@ html, body {
   max-width: 600px;
   padding: 5px;
   border: 2px solid $color-alpha;
-  &:before, &:after {
+  &:before,
+  &:after {
     content: "•";
     position: absolute;
     width: 14px;
@@ -81,7 +98,8 @@ html, body {
     position: relative;
     border: 2px solid $color-alpha;
     padding: 12px;
-    &:before, &:after {
+    &:before,
+    &:after {
       content: "•";
       position: absolute;
       width: 14px;
@@ -99,5 +117,44 @@ html, body {
     &:after {
       right: -2px;
     }
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .logo-container {
+    height: 50%;
+  }
+}
+
+.main-row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 992px) {
+  .confirm-btn {
+    margin-top: 88px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .input-file {
+    min-width: 196px !important;
+  }
+
+  .main-row {
+    flex-direction: column !important;
+  }
+
+  .confirm-btn {
+    margin-top: 0px !important;
+    margin-left: 0px !important;
+    min-width: 196px !important;
+  }
+
+  .generate-btn {
+    margin-top: 18px !important;
+    min-width: 196px !important;
   }
 }
