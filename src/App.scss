@@ -54,12 +54,13 @@ body {
 }
 
 .confirm-btn {
-  margin-top: 62px;
+  margin-top: 55px;
   padding: 6px 10px;
   background-color: yellow !important;
   color: black !important;
   border: none !important;
   margin-left: 30px !important;
+  height: 54px;
 
   &:hover {
     background-color: #dbd514 !important;
