@@ -121,16 +121,21 @@ body {
   }
 }
 
-@media screen and (max-height: 600px) {
-  .logo-container {
-    height: 50%;
-  }
-}
-
 .main-row {
   width: 100%;
   display: flex;
   flex-direction: row;
+}
+
+
+@media screen and (max-height: 600px) {
+  .logo-container {
+    height: 50%;
+    width: 100%;
+    position: relative;
+    left: 130px;
+    bottom: 230px;
+  }
 }
 
 @media screen and (max-width: 992px) {
